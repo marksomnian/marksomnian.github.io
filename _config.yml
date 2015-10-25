@@ -1,7 +1,7 @@
 # Site settings
-title: Paper Theme
+title: Marks Polakovs
 description: > # this means to ignore newlines until "baseurl:"
-  A gentle theme for Jekyll utilising material design.
+  The website of that guy.
 baseurl: "/" # the subpath of your site, e.g. /blog/
 # url: "http://yourdomain.com" # the base hostname & protocol for your site you most probably don't need to set it
 
@@ -12,16 +12,16 @@ paginate_path: "page/:num"
 highlighter: pygments
 
 # comments
-disqus: # add disqus shortname here
+disqus: markspblog
 
 # author info
 # add your appropriate info here
-author: # your name
-bio:    # your bio
-email:
-email_md5: # md5 hash of your email
-twitter_username:
-github_username:
+author: Marks Polakovs
+bio: Some guy.
+email: marks@markspolakovs.me
+email_md5: b6ab3e192df7ef2395a2deb618e97c11
+twitter_username: SirMarksomnian
+github_username: marksomnian
 
 # Theming options
 # These settings are mandatory.
@@ -29,8 +29,8 @@ theme:              'blue-pink'
 # drawer theming
 drawer:
   text_color:       'grey-600'
-  header_color:     'blue-500'
-  navigation_color: 'grey-200'
+  header_color:     'teal-500'
+  navigation_color: 'pink-200'
 # footer theming
 footer:
   text_color: 'blue-grey-200'
