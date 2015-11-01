@@ -1,4 +1,4 @@
-<header id="toolbar" class="paper-layout-header mdl-layout__header mdl-layout__header--waterfall">
+<header id="toolbar" class="paper-layout-header mdl-layout__header mdl-layout__header--waterfall mdl-color--{{site.drawer.header_color}}">
   <!-- Top row, always visible -->
   <div class="mdl-layout__header-row">
     <!-- Title -->
@@ -27,7 +27,7 @@
     </div>
     <div class="mdl-layout-spacer"></div>
     <!-- Navigation -->
-    <nav class="mdl-navigation">
+    <nav class="mdl-navigation mdl-color--{{site.drawer.navigation_color}}">
       <a class="mdl-navigation__link" href="{{ site.baseurl }}{{ site.url }}">Home</a>
       {% for page in site.pages %}
         {% if page.title %}
