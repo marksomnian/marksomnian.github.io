@@ -2,9 +2,12 @@
 layout: post
 title:  "Religion doesn't kill people, people kill people'"
 date:   2015-11-14 15:53:00
-categories: Rambling,Insanity,Tragedy
+categories:
+ - rambling
+ - insanity
+ - tragedy
 ---
-# Religion doesn't kill people, people kill people
+
 
 <small>full disclosure. I do not believe in any god or other supernatural power (apart from the Flying Spaghetti Monster),
 however in this post I will try to understand things from both points of view.</small>
