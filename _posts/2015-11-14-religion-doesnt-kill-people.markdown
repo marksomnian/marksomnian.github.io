@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Religion doesn't kill people, people kill people'"
+title:  "Religion doesn't kill people, people kill people"
 date:   2015-11-14 15:53:00
 categories:
  - rambling
