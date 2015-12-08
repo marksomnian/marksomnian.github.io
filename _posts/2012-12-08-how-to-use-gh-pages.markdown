@@ -49,7 +49,7 @@ Now, we need to create a `git` repo for our site on our local computer. If your 
 
 Open a command line however you do on your operating system and `cd` to where your site's files are. Then, type these commands (don't type the `$` character or the comments (the bits after `#`)):
 
-{%highlight shell %}
+{%highlight bash %}
 
 $ git init # Create a repository
 Initialized empty Git repository in C:/Users/Marks Polakos/IdeaProjects/potato/.git/
@@ -68,7 +68,7 @@ Now comes the clever bit. Go back to the GitHub website and copy this URL:
 
 Now, in your command line. type:
 
-{%highlight shell %}
+{%highlight bash %}
 
 $ git remote add origin https://github.com/marksomnian/turbulent-octo-woof.git # Save that URL as a link to a remote repository (on GitHub)
 
@@ -82,7 +82,7 @@ What you've just done is told `git` on your computer where to upload all your co
 
 Now comes the *really* clever bit:
 
-{%highlight shell %}
+{%highlight bash %}
 
 $ git checkout -b gh-pages # Create a new branch called gh-pages and switch to it
 Switched to a new branch 'gh-pages'
