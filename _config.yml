@@ -30,7 +30,7 @@ theme:              'blue-pink'
 drawer:
   text_color:       'grey-600'
   header_color:     'teal-500'
-  navigation_color: 'red-500'
+  navigation_color: 'blue-grey-500'
 # footer theming
 footer:
   text_color: 'blue-grey-200'
