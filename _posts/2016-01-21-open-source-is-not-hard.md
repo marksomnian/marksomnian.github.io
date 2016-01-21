@@ -1,5 +1,6 @@
 ---
-published: false
+layout: post
+title: Open source is not that hard, guise!
 ---
 
 ## Open source is not that hard, guise!
