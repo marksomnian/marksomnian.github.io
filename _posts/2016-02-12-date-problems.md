@@ -1,11 +1,13 @@
 ---
 layout: post
 title: "How computers store time, the year 2038 problem, and how to brick an iPhone."
-date: 2016-02-12 18:00:00
-categories:
- - tech
- - informs
+date: {}
+categories: 
+  - tech
+  - informs
+published: true
 ---
+
 
 How do you think of a date and a time? You most probably think of it as a year, month, day, hour, minute, and second. Computers don’t do it that way. That’s far too complicated. No, computers store the time as the number of seconds since midnight, the 1st January 1970, GMT . Remember that GMT bit, it will be important later.
 
@@ -16,4 +18,3 @@ However, clever viewers may have identified a problem. What is the maximum for t
 However, there is a problem. What if this time value reaches the maximum? And when? Well, the “when” question is simple: at 3:14:08 AM GMT on 19 January 2038. What will happen ad that point is that the value of time would go down to its minimum, that being negative two billion, yadda yadda, six hundred and fourty eight . And that time value is 8:46:03 PM GMT on the 13 February 1901. And many computers around the world, if they haven’t been updated, will think it’s 1901. The solution seems simple: Use a bigger field, so you can keep track of time for 292 billion years for example, with a 64-bit number. However, changing that causes all kinds of compatibility issues, such as programs not expecting the number to be that high and crashing. Not good.
 
 But I promised in the intro that I would talk about bricking iPhones. Well, yesterday as I record this, a bug was reported for iOS 8 to 9.3, wherein setting the date to be January 1st 1970 can brick the device in certain timezones. Basically, when your phone shows you the time, it first has to account for what timezone you are in, as internally it counts time since midnight 1st January 1970 UTC, remember? Well, first it has to adjust that time for your timezone, so it adds or subtracts a number of seconds, based on your timezone. However, since 1st January 1970 is time 0, it is possible that it subtracts enough seconds to make the timezone-adjusted value of time negative. Then it goes on its merry way, dividing the time value by all kinds of things, to get a series of six numbers that you will understand (year, month, day, hour, minute, second). However, when it does those divisions, it will get negative numbers. And then it will go, “Hang on a second, why am I in the hour -13? That doesn’t make sense?” And it will crash. And reboot. And crash again. And so on, in a perpetual cycle of fail. So don’t do it. And I realise that my saying “don’t do it” will make you all want to do it, but, unless you want a 500 dollar paperweight, please don’t actually do it.
-
