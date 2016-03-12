@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How computers store time, the year 2038 problem, and how to brick an iPhone."
-date: {}
+date: 2016-02-15 12:00:00
 categories: 
   - tech
   - informs
