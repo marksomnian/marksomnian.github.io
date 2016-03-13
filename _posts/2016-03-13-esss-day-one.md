@@ -1,5 +1,4 @@
 ---
-published: true
 layout: post
 title: "ESSS, Day One"
 date: 2016-03-13 22:31:00
