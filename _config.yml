@@ -35,3 +35,6 @@ drawer:
 footer:
   text_color: 'blue-grey-200'
   color: 'blue-grey-600'
+
+gems:
+ - jekyll-paginate
