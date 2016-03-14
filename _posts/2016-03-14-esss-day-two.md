@@ -1,4 +1,5 @@
 ---
+published: true
 layout: post
 title: ESSS, Day Two
 date: 2016-03-14 22:35:00
