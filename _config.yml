@@ -9,7 +9,7 @@ baseurl: "/" # the subpath of your site, e.g. /blog/
 markdown: kramdown
 paginate: 5 # pagination based on number of posts
 paginate_path: "page/:num"
-highlighter: pygments
+highlighter: rouge
 
 # comments
 disqus: markspblog
@@ -30,8 +30,13 @@ theme:              'blue-pink'
 drawer:
   text_color:       'grey-600'
   header_color:     'teal-500'
-  navigation_color: 'pink-200'
+  navigation_color: 'blue-grey-500'
 # footer theming
 footer:
   text_color: 'blue-grey-200'
   color: 'blue-grey-600'
+
+gems:
+ - jekyll-paginate
+
+future: true

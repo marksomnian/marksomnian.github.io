@@ -22,11 +22,11 @@ know what a repository is, and a GitHub repo is no different.
 
 On the top-right corner of the screen click the plus icon and select `New Repository`, as shown in the screenshot below.
 
-![Screenshot of the GitHub homepage, with the New Repository link highlighted.]({{ site.url }}/assets/gh-pages/Capture1.png)
+![Screenshot of the GitHub homepage, with the New Repository link highlighted.](https://raw.githubusercontent.com/marksomnian/marksomnian.github.io/master/assets/gh-pages/Capture1.PNG)
 
 You get these options:
 
-![Form that shows when New Repository link followed]({{ site.url }}/assets/gh-pages/Capture2.png)
+![Form that shows when New Repository link followed](https://raw.githubusercontent.com/marksomnian/marksomnian.github.io/master/assets/gh-pages/Capture2.PNG)
 
 Here's what to do there:
 
@@ -41,7 +41,7 @@ Here's what to do there:
 
 Once you've created your repo, you'll see this screen:
 
-![Screenshot of our new repo!]({{ site.url }}/assets/gh-pages/Capture3.png)
+![Screenshot of our new repo!](https://raw.githubusercontent.com/marksomnian/marksomnian.github.io/master/assets/gh-pages/Capture3.PNG)
 
 ## Creating a local repository
 
@@ -64,7 +64,7 @@ $ git commit -m "Initial commit" # Commit our changes, save them to the repo. Wr
 
 Now comes the clever bit. Go back to the GitHub website and copy this URL:
 
-![Close up of the repo's URL]({{ site.url }}/assets/gh-pages/Capture4.png)
+![Close up of the repo's URL](https://raw.githubusercontent.com/marksomnian/marksomnian.github.io/master/assets/gh-pages/Capture4.PNG)
 
 Now, in your command line. type:
 
@@ -105,7 +105,7 @@ This bears some explanation. With a branch called `gh-pages`, you're basically t
 
 And now, if everything goes according to plan, go to `http://yourusername.github.io/yourreponame`, substituting `yourusername` and `yourreponame`. And hey presto!
 
-![Hey presto!]({{ site.url }}/assets/gh-pages/Capture5.png)
+![Hey presto!](https://raw.githubusercontent.com/marksomnian/marksomnian.github.io/master/assets/gh-pages/Capture5.PNG)
 
 Now, the reason my address bar says `markspolakovs.me` instead of `marksomnian.github.io` is because I've set up my GitHub pages with my custom domain name, `markspolakovs.me`.
 For you it should be `yourusername.github.io`.
