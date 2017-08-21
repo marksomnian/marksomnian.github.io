@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SSELTT Timer</title>
+</head>
+<body>
+    <h1>The current time in SSELTT (Standard Solar Eclipse Live Thread Timer) is:</h1>
+    <h2 id="timer">Shout at Marks, his code fucked up</h2>
+
+    <script src="https://unpkg.com/moment@2.18.1"></script>
+    <script>
+        window.setInterval(function() {
+            var now = moment();
+            var epoch = moment('2017-08-21T17:15Z');
+            var tMOP = now.unix() - epoch.unix()
+            var t = Math.abs(tMOP);
+            var hours = (t / (60 * 60)).toFixed(0);
+            var minutes = ((t % 60) / 60).toFixed(0);
+            var seconds = ((t % 60) % 60).toFixed(0);
+            if (now.isBefore(epoch)) {
+                document.getElementById('timer').innerText = 'T- ' + hours + 'hours ' + minutes + 'minutes ' + seconds + 'seconds';
+            } else {
+                document.getElementById('timer').innerText = 'T+ ' + hours + 'hours ' + minutes + 'minutes ' + seconds + 'seconds';
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
