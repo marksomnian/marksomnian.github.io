@@ -21,9 +21,9 @@
             var minutes = ((t % 60) / 60).toFixed(0);
             var seconds = ((t % 60) % 60).toFixed(0);
             if (now.isBefore(epoch)) {
-                document.getElementById('timer').innerText = 'T- ' + hours + 'hours ' + minutes + 'minutes ' + seconds + 'seconds';
+                document.getElementById('timer').innerText = 'T- ' + hours + ' hours ' + minutes + ' minutes ' + seconds + ' seconds';
             } else {
-                document.getElementById('timer').innerText = 'T+ ' + hours + 'hours ' + minutes + 'minutes ' + seconds + 'seconds';
+                document.getElementById('timer').innerText = 'T+ ' + hours + ' hours ' + minutes + ' minutes ' + seconds + ' seconds';
             }
         }, 1000);
     </script>
