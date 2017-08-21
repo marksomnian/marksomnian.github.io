@@ -14,7 +14,7 @@
     <script>
         window.setInterval(function() {
             var now = moment();
-            var epoch = moment('2017-08-21T17:15Z');
+            var epoch = moment('2017-08-21T17:15:00Z');
             var tMOP = now.unix() - epoch.unix()
             var t = Math.abs(tMOP);
             var hours = (t / (60 * 60)).toFixed(0);
