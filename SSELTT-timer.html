@@ -12,14 +12,26 @@
 
     <script src="https://unpkg.com/moment@2.18.1"></script>
     <script>
+function getTimeRemaining(endtime) {
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor((t / 1000) % 60);
+  var minutes = Math.floor((t / 1000 / 60) % 60);
+  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
+
         window.setInterval(function() {
             var now = moment();
             var epoch = moment('2017-08-21T17:15:00Z');
             var tMOP = now.unix() - epoch.unix()
-            var t = Math.abs(tMOP);
-            var hours = (t / (60 * 60)).toFixed(0);
-            var minutes = ((t % 60) / 60).toFixed(0);
-            var seconds = (t % 60 % 60).toFixed(0);
+            var { hours, minutes, seconds } = getTimeRemaining('2017-08-21T17:15:00Z');
             if (now.isBefore(epoch)) {
                 document.getElementById('timer').innerText = 'T- ' + hours + ' hours ' + minutes + ' minutes ' + seconds + ' seconds';
             } else {
