@@ -18,8 +18,8 @@
             var tMOP = now.unix() - epoch.unix()
             var t = Math.abs(tMOP);
             var hours = (t / (60 * 60)).toFixed(0);
-            var minutes = ((t - (hours * 60)) / 60).toFixed(0);
-            var seconds = (t - (hours * 60 + minutes * 60)).toFixed(0);
+            var minutes = ((t % 60) / 60).toFixed(0);
+            var seconds = (t % 60 % 60).toFixed(0);
             if (now.isBefore(epoch)) {
                 document.getElementById('timer').innerText = 'T- ' + hours + ' hours ' + minutes + ' minutes ' + seconds + ' seconds';
             } else {
